@@ -10,7 +10,7 @@
 /* Font and color */
 body {
     font-family: Roboto, sans-serif;
-    font-size: 300;
+    font-weight: 300;
     color: #353839;
 }
 /* logo & nav bar */
@@ -21,7 +21,7 @@ nav {
 }
 label.logo {
     color: #353839;
-    font-size: 2vw;
+    font-size: 200%;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
@@ -37,7 +37,7 @@ nav ul li {
 }
 nav ul li a {
     color: #353839;
-    font-size: 20px;
+    font-size: 150%;
     font-weight: 900;
     text-transform: uppercase;
     padding: 30px 25px;
@@ -66,7 +66,7 @@ nav li a:hover {
 .mainpicture {
     background: url(../images/mainpicture.jpg) no-repeat center center;
     background-size: cover;
-    height: calc(100vh - 80px);   
+    height: calc(50vh - 80px);   
     overflow: hidden;
 }
 /*center slogan*/
@@ -81,7 +81,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
     text-transform: uppercase;
     text-align: center;
     position: absolute;
-    top: 50%;
+    line-height: calc(50vh - 80px);
     width: 100%;
     /*animation slogan*/
     animation-name: slogan-zoom;
@@ -95,7 +95,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
     font-size: 4vw;
     text-transform: uppercase;
 }
-/* ethos box*/
+/* ethos container*/
 .ethoscontainer {
     display: flex;
     flex-direction: row;
@@ -129,51 +129,47 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
     text-align: justify;
     font-size: 1.5vw;
 }
-/* grid */
-.grid {
+/* grid*/
+.container-places {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    align-items: start;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
 }
-/* individual grid item */
-.grid-item {
-    background-color: white;
+.places-item {
+    background: white;
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: 0.2s;
-    margin: 2.5%;
 }
-.grid-item:hover {
+.places-item:hover {
     transform: translateY(-0.5%);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
 }
-/* img on the grid items */
-.card-img {
+.card-content {
+    padding: 2.5rem;
+}
+.places-box img {
     display: block;
     width: 100%;
-    height:20rem;
+    height: 30vh;
     object-fit: cover;
 }
-/* content on card */
-.card-content {
-    padding: 3rem;
-}
-.card-header {
-    font-size: 3rem;
-    font-weight: 500;
+.places-heading {
+    font-size: 2rem;
+    font-weight: bold;
     color: #353839;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
+    text-align: center;
 }
-.card-text {
-    font-size: 1.6rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.7;
-    color: #353839;
-    margin-bottom: 2.5rem;
+.places-text {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.2;
 }
 .card-btn {
     display: block;
@@ -191,8 +187,16 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
     text-transform: uppercase;
 }
 
+/* img on the grid items */
+.card-img {
+    display: block;
+    width: 100%;
+    height:30vw;
+    object-fit: cover;
+}
 /* footer element */
 .footer {
+    width: 100%;
     padding: 40px 0;
     background-color: white;
  }
@@ -258,20 +262,14 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
 
 @media (max-width: 992px) {
     label.logo {
-        font-size: 10vw;
+        font-size: 200%;
         padding-left: 50px;
+    }
+    .checkbtn {
+        display: block;
     }
     nav ul li a {
         font-size: 16px;
-    }
-    .grid {
-        grid-gap: 3rem;
-        width: 100%;
-    }    
-}
-@media (max-width:858px){
-    .checkbtn {
-        display: block;
     }
     nav ul {
         position: fixed;
@@ -290,7 +288,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
         line-height: 30px;
     }
     nav ul li a {
-        font-size: 20px;
+        font-size: 200%;
     }
     nav ul li a:hover {
         background: none;
@@ -302,30 +300,8 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
     #check:checked {
         overflow-y: hidden;
     }
-    .slogan {
-        color:white;
-        font-weight: bold;
-        font-size: 10vw;
-        text-transform: uppercase;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        /*animation slogan*/
-        animation-name: slogan-zoom;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-    }    
-    @keyframes slogan-zoom {
-        from {
-            transform: scale(0.7);
-        }
-        to {
-            transform: scale(1);
-        }
-    }
     .ethos-title {
-        font-size: 10vw;
+        font-size: 250%;
     }
     .ethoscontainer {
         display: flex;
@@ -353,12 +329,65 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
         text-transform: uppercase;
         text-align: center;
         padding: 5% 0 2.5%;
-        font-size: 10vw;
+        font-size: 250%;
     }
     .ethos2 p{
         padding: 2.5% 0 5%;
         text-align: justify;
-        font-size: 5vw;
+        font-size: 150%;
+    }
+    .container-places {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 30px;
+        justify-items: center;
+        gap: 30px;
+    }
+    .places-item {
+        width: 100%;
+    }
+    footer {
+        min-width: 90%;
+    }    
+}
+@media (max-width: 768px){
+    .label.logo {
+        font-size: 200%;
+    }
+    .checkbtn {
+        display: block;
+    }
+    .slogan {
+        color:white;
+        font-weight: bold;
+        font-size: 10vw;
+        text-transform: uppercase;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        /*animation slogan*/
+        animation-name: slogan-zoom;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }    
+    @keyframes slogan-zoom {
+        from {
+            transform: scale(0.7);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    .container-places {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 10px;
+        justify-items: center;
+    }
+    .places-item {
+        width: 95%;
+    }
+    .footer {
+        min-width: 100%;
     }
 }
-
