@@ -276,7 +276,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
         width: 100%;
         height: 100vh;
         background:#DBDBDB;
-        top: 80px;
+        
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -297,7 +297,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
     #check:checked ~ ul {
         left: 0;
     }
-    #check:checked {
+    #check:checked{
         overflow-y: hidden;
     }
     .ethos-title {
