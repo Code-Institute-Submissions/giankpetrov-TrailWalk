@@ -19,12 +19,13 @@ nav {
     height: 80px;
     width: 100%;
 }
-label.logo {
+.logo {
     color: #353839;
     font-size: 200%;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 50px;
     font-weight: bold;
+    display: inline-block;
 }
 nav ul {
     float: right;
