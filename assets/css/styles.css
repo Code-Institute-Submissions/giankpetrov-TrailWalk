@@ -295,6 +295,65 @@ button:is(:hover, :focus)::after {
     }
 }
 
+/*Sign up page*/
+.sign-up-container {
+    width: 100%;
+    height: auto;
+}
+.sign-up-background {
+    background: url(../images/signup.webp) no-repeat center center;
+    background-size: cover;
+    height: 64vh;
+    overflow: hidden;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+.sign-up-form {
+    width: 35vw;
+    background-color: rgba(53, 56, 57, 0.8);
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+.sign-up-form > h2 {
+    text-transform: uppercase;
+    font-size: 2.5vh;
+    text-align: center;
+    padding-bottom: 2vh;
+    letter-spacing: 2px;
+}
+.user-label {
+    line-height: 200%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.input-form {
+    background-color: white;
+    height: 2rem;
+    width: 16vw;
+}
+.join-btn {
+    margin-top: 2vh;
+    width: 16vw;
+    height: 3vh;
+    text-transform: uppercase;
+    background-color: white;
+    color: #353839;
+    font-weight: bold;
+}
+.join-btn:hover {
+    background-color: #353839;
+    color: #fff;
+    border-color: #fff;
+}
+/*media query*/
 @media (max-width: 992px) {
     label.logo {
         font-size: 200%;
@@ -383,6 +442,55 @@ button:is(:hover, :focus)::after {
     }
     footer {
         min-width: 90%;
+    }
+    /*signup page 992px*/
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .sign-up-form {
+        width: 35vw;
+        background-color: rgba(53, 56, 57, 0.8);
+        align-items: center;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0.5rem;
+    }
+    .sign-up-form > h2 {
+        text-transform: uppercase;
+        font-size: 2.5vh;
+        text-align: center;
+        padding-bottom: 1vh;
+        letter-spacing: 2px;
+    }
+    .user-label {
+        line-height: 200%;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 1.5vh;
+    }
+    .input-form {
+        background-color: white;
+        height: 1.7rem;
+        width: 16vw;
+    }
+    .join-btn {
+        margin-top: 2vh;
+        width: 16vw;
+        height: 3vh;
+        text-transform: uppercase;
+        background-color: white;
+        color: #353839;
+        font-weight: bold;
+    }
+    .join-btn:hover {
+        background-color: #353839;
+        color: #fff;
+        border-color: #fff;
     }    
 }
 @media (max-width: 768px){
@@ -425,4 +533,56 @@ button:is(:hover, :focus)::after {
     .footer {
         min-width: 100%;
     }
+    /*signup page 768px*/
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .sign-up-form {
+        width: 40vw;
+        background-color: rgba(53, 56, 57, 0.8);
+        align-items: center;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0.5rem;
+    }
+    .sign-up-form > h2 {
+        text-transform: uppercase;
+        font-size: 2vh;
+        text-align: center;
+        padding-bottom: 1vh;
+        letter-spacing: 2px;
+    }
+    .user-label {
+        line-height: 200%;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 1.5vh;
+    }
+    .input-form {
+        background-color: white;
+        height: 1.5rem;
+        width: 20vw;
+    }
+    .join-btn {
+        margin-top: 2vh;
+        width: 20vw;
+        height: 3vh;
+        text-transform: uppercase;
+        background-color: white;
+        color: #353839;
+        font-weight: bold;
+    }
+    .join-btn:hover {
+        background-color: #353839;
+        color: #fff;
+        border-color: #fff;
+    }
+    /*.sign-up-background {
+        height: 59vh;
+    }*/
 }
