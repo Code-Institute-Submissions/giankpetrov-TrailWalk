@@ -167,10 +167,10 @@ button:is(:hover, :focus)::after {
 /* grid*/
 .container-places {
     display: grid;
-    padding: 50px;
+    padding: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 50px;
+    gap: 30px;
 }
 .places-item {
     background: white;
@@ -179,13 +179,14 @@ button:is(:hover, :focus)::after {
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: 0.2s;
+    text-align: center;
 }
 .places-item:hover {
     transform: translateY(-0.5%);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
 }
 .card-content {
-    padding: 2.5rem;
+    padding: 2rem;
 }
 .places-box img {
     display: block;
@@ -209,12 +210,9 @@ button:is(:hover, :focus)::after {
 .card-btn {
     display: block;
     width: 100%;
-    padding: 1.5rem;
     font-size: 2rem;
     text-align: center;
     color: #353839;
-    background-color: white;
-    border: none;
     border-radius:  0.4rem;
     transition: 0.2s;
     cursor: pointer;
