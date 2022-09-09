@@ -292,6 +292,26 @@ button:is(:hover, :focus)::after {
         transform: scale(1);
     }
 }
+/*Checklist page*/
+.checklist-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+.checklist-title {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+}
+.checklist-mainimg {
+    width: 100%;
+}
+.checklist-mainimg img {
+    height: fit-content;
+    width: 100%;
+}
 /*Trail page*/
 .trail-container {
     display: flex;
@@ -647,6 +667,16 @@ button:is(:hover, :focus)::after {
     }
     .footer {
         min-width: 100%;
+    }
+    /*checklist page 768px*/
+    .checklist-container {
+        flex-direction: column;
+    }
+    .checklist-title {
+        font-size: 2rem;
+    }
+    .checklist-container-img {
+        width: 100%;
     }
     /* trails page 768px*/
     .trail-container {
