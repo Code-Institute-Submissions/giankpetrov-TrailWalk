@@ -93,7 +93,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
 .h2-title {
     text-align: center;
     margin: 60px 0 60px 0;
-    font-size: 3vw;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
@@ -311,6 +311,44 @@ button:is(:hover, :focus)::after {
 .checklist-mainimg img {
     height: fit-content;
     width: 100%;
+    border-radius: 20px;
+}
+.list-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.list-container-reverse {
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+}
+.list-text {
+    width: 100%;
+}
+.list-text h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+.list-text p {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: justify;
+    top: 25%;
+    line-height: 150%;
+}
+.list-img {
+    width: 100%;
+    object-fit: cover;
+}
+.list-img img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 20px;
 }
 /*Trail page*/
 .trail-container {
@@ -328,6 +366,7 @@ button:is(:hover, :focus)::after {
     border-radius: 0.4rem;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     transition: 0.2s;
+    border-radius: 20px;
 }
 .trail-info:hover {
     transform: translateY(-0.5%);
@@ -365,6 +404,7 @@ button:is(:hover, :focus)::after {
     max-width: 100%;
     height: 40vh;
     object-fit: cover;
+    border-radius: 20px;
 }
 .trail-map {
     width: 30%;
@@ -374,6 +414,7 @@ button:is(:hover, :focus)::after {
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     transition: 0.2s;  
     align-self: center;  
+    border-radius: 20px;
 }
 .trail-map:hover {
     transform: translateY(-0.5%);
@@ -382,6 +423,7 @@ button:is(:hover, :focus)::after {
 .trail-map iframe {
     max-width: 100%;
     height: 40vh;
+    border-radius: 20px;
 }
 /*coming soon*/
 .coming-soon {
@@ -507,7 +549,7 @@ button:is(:hover, :focus)::after {
         overflow-y: hidden;
     }
     .h2-title {
-        font-size: 250%;
+        font-size: 3rem;
     }
     .ethoscontainer {
         display: flex;
@@ -554,6 +596,19 @@ button:is(:hover, :focus)::after {
     }
     footer {
         min-width: 90%;
+    }
+    /* checklist page 992px*/
+    .list-text h2 {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    .list-text p {
+        line-height: 100%;
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+    .list-img img {
+        height: 40vh;
     }
     /* trails page 992px*/
     .trail-container {
@@ -677,6 +732,15 @@ button:is(:hover, :focus)::after {
     }
     .checklist-container-img {
         width: 100%;
+    }
+    .list-container {
+        flex-direction: column;
+    }
+    .list-container-reverse {
+        flex-direction: column;
+    }
+    .list-text p {
+        padding: 2rem;
     }
     /* trails page 768px*/
     .trail-container {
