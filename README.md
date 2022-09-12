@@ -5,7 +5,7 @@
 
 ## TRAIL WALK
 
-Welcome to TRAIL WALK, a website developed to introduce to newbies and veterans a place to find their next adventure, whenever you are looking for a starting point or put your capabilities to the test.
+Welcome to TRAIL WALK, a website developed to introduce to newbies and veterans a place to find their next adventure, no matter if you are looking for a starting point or put your capabilities to the test.
 
 
 ## Tech Stack
