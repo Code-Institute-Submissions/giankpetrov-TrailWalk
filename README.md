@@ -1,5 +1,5 @@
 
-![alt text](https://giankpetrov.github.io/TrailWalk/readme/images/mockuppp1.PNG?raw=true)
+![alt text](https://github.com/giankpetrov/TraillWalk/blob/main/readme/images/mockuppp1.PNG?raw=true)
 
 
 
@@ -28,7 +28,7 @@ Welcome to TRAIL WALK, a website developed to introduce to newbies and veterans 
 - HTML **[Markup Validator](https://validator.w3.org/)** by The World Wide Web Consortium **[W3C](https://www.w3.org/)**
 ![alt text](https://giankpetrov.github.io/TrailWalk/readme/images/.PNG?raw=true)
 - CSS Validator **[Jigsaw](https://jigsaw.w3.org/css-validator/)** by The World Wide Web Consortium **[W3C](https://www.w3.org/)**
-![alt text](https://giankpetrov.github.io/TrailWalk/readme/images/CSSvalidator.PNG?raw=true)
+![alt text](https://github.com/giankpetrov/TraillWalk/blob/main/readme/images/CSSvalidator.PNG?raw=true)
 ### Lighthouse
 
 
