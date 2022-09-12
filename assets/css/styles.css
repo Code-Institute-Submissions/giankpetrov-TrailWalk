@@ -507,6 +507,29 @@ button:is(:hover, :focus)::after {
     color: #fff;
     border-color: #fff;
 }
+/*Form Destination page*/
+.formdestination-container {
+    display: flex;
+    flex-direction: column;
+}
+.formdestination-img {
+    height: calc(80vh - 80px);
+    margin: auto;
+}
+.formdestination-img img{
+    height: 100%;
+    width: auto;
+}
+.formdestination-text {
+    height: 20vh;
+    text-align: center;
+    padding: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.formdestination-text a {
+    text-decoration: underline;
+}
 /*media query*/
 @media (max-width: 992px) {
     label.logo {
@@ -848,5 +871,13 @@ button:is(:hover, :focus)::after {
         background-color: #353839;
         color: #fff;
         border-color: #fff;
+    }
+    /*Form Destination 768px*/
+    .formdestination-img img{
+        height: 80%;
+    }
+    .formdestination-text {
+        font-size: 1rem;
+        padding: 0;
     }
 }
