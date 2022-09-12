@@ -1,5 +1,5 @@
 
-![alt text](https://giankpetrov.github.io/TrialWalk/readme/images/mockuppp1.PNG?raw=true)
+![alt text](https://giankpetrov.github.io/TrailWalk/readme/images/mockuppp1.PNG?raw=true)
 
 
 
@@ -26,9 +26,9 @@ Welcome to TRAIL WALK, a website developed to introduce to newbies and veterans 
 
 ### Validator Testing
 - HTML **[Markup Validator](https://validator.w3.org/)** by The World Wide Web Consortium **[W3C](https://www.w3.org/)**
-![alt text](https://giankpetrov.github.io/TrialWalk/readme/images/.PNG?raw=true)
+![alt text](https://giankpetrov.github.io/TrailWalk/readme/images/.PNG?raw=true)
 - CSS Validator **[Jigsaw](https://jigsaw.w3.org/css-validator/)** by The World Wide Web Consortium **[W3C](https://www.w3.org/)**
-![alt text](https://giankpetrov.github.io/TrialWalk/readme/images/CSSvalidator.PNG?raw=true)
+![alt text](https://giankpetrov.github.io/TrailWalk/readme/images/CSSvalidator.PNG?raw=true)
 ### Lighthouse
 
 
@@ -52,11 +52,11 @@ This couldn't be fixed as this need to be take care from the server side and not
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
-- In the **[GitHub repository](https://github.com/giankpetrov/TrialWalk)**, navigate to the Settings tab
+- In the **[GitHub repository](https://github.com/giankpetrov/TrailWalk)**, navigate to the Settings tab
 - From the source section drop-down menu, select the Main Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found **[here](https://giankpetrov.github.io/TrialWalk/)**
+The live link can be found **[here](https://giankpetrov.github.io/TraillWalk/)**
 
 The website is hosted using GitHub pages, deployed directly from the master brach.
 
@@ -65,7 +65,7 @@ The website is hosted using GitHub pages, deployed directly from the master brac
 Clone the project by following the next command on Bash
 
 ```bash
-  git clone https://giankpetrov.github.io/TrialWalk/
+  git clone https://giankpetrov.github.io/TrailWalk/
 ```
 ## Credits
 
