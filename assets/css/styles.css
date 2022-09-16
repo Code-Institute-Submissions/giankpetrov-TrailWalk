@@ -168,7 +168,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
 }
 .ethos2 h2{
     text-transform: uppercase;
-    font-size: 3vh;
+    font-size: 2.5rem;
     text-align: center;
     padding: 10% 10% 2%;
 }
@@ -606,7 +606,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
         text-transform: uppercase;
         text-align: center;
         padding: 5% 0 2.5%;
-        font-size: 250%;
+        font-size: 2.5rem;
     }
     .ethos2 p{
         padding: 2.5% 0 5%;
@@ -715,6 +715,7 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
         border-color: #fff;
     }    
 }
+/* Media query for tablet devices */
 @media (max-width: 768px){
     .label.logo {
         font-size: 150%;
@@ -890,11 +891,13 @@ I initially got into a bug, when using scale from 1 to 1.3, solved by starting a
         padding: 0;
     }
 }
+/* media query for call to action button 425px */
 @media (max-width: 425px){
     .button {
         font-size: 1.5rem;
     }
 }
+/* media query for call to action button 375px */
 @media (max-width: 375px){
     .button {
         font-size: 2rem;
